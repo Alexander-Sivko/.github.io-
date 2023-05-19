@@ -1,0 +1,327 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+.testimonials{
+    width: 100%;
+    height: auto;
+    background-image: url("../../img/testmonials-bg\ 1@2x.png");
+    background-position: center;
+    background-size: cover;
+
+    padding-top: 85px;
+    padding-bottom: 19px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    box-sizing: border-box;
+}
+
+.testimonials__p-line{
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+
+    width: calc(100% - 25%);
+    height: 2px;
+
+    margin-left: 12.5%;
+    margin-top: 22px;
+
+    background-color: #645766;
+}
+
+@media screen and (min-width: $desktop-max){
+
+    .section-testimonials__people--h1{
+        position: relative;
+        max-width: 1200px;
+        left: 0px;
+
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+    
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    
+        color: #FFFFFF;
+    }
+
+    .testimonials__li{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .testimonials__li--p{
+        position: relative;
+        width: 100%;
+       
+        margin-top: 28px;
+    
+
+        font-family: $font-family__lato;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    
+        @include important-text;
+    
+        color: #FFFFFF;
+    }
+    
+    .testimonials__p-end{
+        position: relative;
+        max-width: 1200px;
+    
+        font-family: $font-family__lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        margin-top: 118px;
+    
+        @include important-text;
+    
+        color: #A291A5;
+        margin: auto;
+    }
+
+    .testimonials__ul{
+        max-width: 1200px;
+        margin-top: 53px; 
+        display: grid;
+        gap: 55px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 81px;
+        padding-right: 81px;
+
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: $desktop){
+
+    .section-testimonials__people--h1{
+        position: relative;
+        width: 100%;
+        left: 0px;
+
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+    
+        align-items: center;
+        text-align: center;
+    
+        color: #FFFFFF;
+    }
+
+    .testimonials__li{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .testimonials__li--p{
+        position: relative;
+        width: 100%;
+       
+        margin-top: 28px;    
+
+        font-family: $font-family__lato;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    
+        @include important-text;
+    
+        color: #FFFFFF;
+    }
+    
+    .testimonials__p-end{
+        position: relative;
+        width: calc(100% - 30%);
+    
+        font-family: $font-family__lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        margin-left: 15%;
+        margin-top: 118px;
+    
+        @include important-text;
+    
+        color: #A291A5;
+    }
+
+    .testimonials__ul{
+        margin-top: 53px; 
+        display: grid;
+        gap: 55px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 81px;
+        padding-right: 81px;
+    }
+}
+
+@media screen and (max-width: $tablet){
+
+    .section-testimonials__people--h1{
+        position: relative ;
+        width: 100%;
+        left: 0px;
+
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+    
+        align-items: center;
+        text-align: center;
+    
+        color: #FFFFFF;
+    }
+    
+    .testimonials__ul{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 58px;
+        margin-top: 53px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .testimonials__li{
+        position: relative;
+        @include important-text;
+    }
+    
+    .testimonials__li--p{
+        position: relative;
+        width: 100%;
+  
+        padding-left: 10px;
+        padding-right: 10px;
+    
+        font-family: $font-family__lato;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    
+        @include important-text;
+    
+        color: #FFFFFF;
+    }
+    
+    .testimonials__p-end{
+        position: relative;
+        width: calc(100% - 70px);
+    
+        font-family: $font-family__lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        margin-left: 35px;
+        margin-top: 67px;
+
+        @include important-text;
+        flex-direction: column;
+    
+        color: #A291A5;
+    }
+}
+
+@media screen and (max-width: $mobil){
+
+.section-testimonials__people--h1{
+    position: relative ;
+    width: 100%;
+    height: 123px;
+    left: 0px;
+    
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+
+    align-items: center;
+    text-align: center;
+
+    color: $title;
+}
+
+.testimonials__ul{
+    margin-top: 53px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.testimonials__li{
+    @include important-text;
+    flex-direction: column;
+}
+
+.testimonials__li--p{
+    position: relative;
+    width: 270px;
+   
+    margin-top: 28px;
+
+    font-family: $font-family__lato;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include important-text;
+
+    color: #FFFFFF;
+}
+
+.testimonials__div-end{
+    width: 100%;
+}
+
+.testimonials__p-end{
+    position: relative;
+    width: calc(100% - 70px);
+
+    font-family: $font-family__lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    margin-top: 37px;
+    margin-left: 35px;
+
+    @include important-text;
+
+    color: #A291A5;
+}
+
+}

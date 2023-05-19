@@ -1,0 +1,596 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+    .section__button-download{
+        max-width: 1200px;
+    }
+
+    // desktop-max //
+
+    @media screen and (min-width: $desktop){
+   
+        // buy nov //
+        
+        .nav__button--buynov{
+            position: relative;
+            width: 119px;
+            height: 37px;
+        
+            background: $button__background;
+            border-radius: 40px;
+            border: 0px;
+    
+        }
+        
+        .nav__button--buynov-a{
+            width: 119px;
+            height: 37px;
+        
+            font-family: $font-family__montserrat;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 15px;
+            
+            @include important-text;
+
+            border-radius: 40px;
+            border: 1px solid #8D81AC;
+            background: $button__background;
+            color: $button;
+        
+            &:hover{
+                background: $button-hover__background; 
+                color: $button-hover__color;
+                
+                transition: 1s;
+             }
+         }
+             // Download //
+     
+     .button__download{
+         position: absolute;
+         width: calc(100% - 60%);
+         
+         height: 62px;
+     
+         
+         margin-top: -31px;
+         margin-left: 30%;
+     
+         background: $button__background;
+         border-radius: 40px;
+         border: 0px;
+
+         @include important-text;
+     }
+     
+     
+     .button__download--a{
+         position: relative;
+         width: 100%;
+         height: 45px;
+     
+         font-family: $font-family__montserrat;
+         font-style: normal;
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 20px;
+     
+          z-index: 1;
+
+         @include important-text;
+     
+         border-radius: 40px;
+         background: $button__background;
+         border: 2px solid #8D81AC;
+         color: $button;
+     
+         &:hover{
+             background: $button-hover__background; 
+             color: $button-hover__color;
+             
+             transition: 1s;
+          }
+        }
+     }
+
+    // desktop //
+
+@media  screen and (max-width: $desktop){
+   
+   // buy nov //
+   
+   .nav__button--buynov{
+       position: relative;
+       width: 119px;
+       height: 37px;
+   
+       background: $button__background;
+       border-radius: 40px;
+       border: 0px;
+   }
+   
+   .nav__button--buynov-a{
+        width: 119px;
+        height: 37px;
+   
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 15px;
+   
+        @include important-text;
+
+        border-radius: 40px;
+        border: 1px solid #8D81AC;
+        background: $button__background;
+        color: $button;
+   
+       &:hover{
+           background: $button-hover__background; 
+           color: $button-hover__color;
+           
+           transition: 1s;
+        }
+    }
+        // Download //
+
+.button__download{
+    position: absolute;
+    width: calc(100% - 60%);
+    
+    height: 62px;
+
+    
+    margin-top: -31px;
+    margin-left: 30%;
+
+    background: $button__background;
+    border-radius: 40px;
+    border: 0px;
+
+    @include important-text;
+}
+
+
+.button__download--a{
+    position: relative;
+    width: 100%;
+    height: 62px;
+
+    z-index: 1;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    @include important-text;
+
+    border-radius: 40px;
+    background: $button__background;
+    border: 2px solid #8D81AC;
+    color: $button;
+
+    &:hover{
+        background: $button-hover__background; 
+        color: $button-hover__color;
+        
+        transition: 1s;
+     }
+   }
+}
+
+// tablet //
+
+@media  screen and (max-width: $tablet){
+
+// buy nov //
+
+.nav__button--buynov{
+    position: relative;
+    width: 119px;
+    height: 37px;
+
+    background: $button__background;
+    border-radius: 40px;
+    border: 0px;
+}
+
+.nav__button--buynov-a{
+    width: 119px;
+    height: 37px;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+
+    @include important-text;
+
+    border-radius: 40px;
+    border: 1px solid #8D81AC;
+    background: $button__background;
+    color: $button;
+
+    &:hover{
+        background: $button-hover__background; 
+        color: $button-hover__color;
+        
+        transition: 1s;
+     }
+}
+
+// Download //
+
+.button__download{
+    position: absolute;
+    width:calc(100% - 50%) ;
+    height: 62px;
+
+    margin-top: -31px;
+    margin-left: 25%;
+    
+
+    background: $button__background;
+    border-radius: 40px;
+    border: 0px;
+
+    @include important-text;
+}
+}
+
+.button__download--a{
+    position: relative;
+    width: 100%;
+    height: 62px;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    @include important-text;
+
+    border-radius: 40px;
+    background: $button__background;
+    border: 2px solid #8D81AC;
+    color: $button;
+
+    &:hover{
+        background: $button-hover__background; 
+        color: $button-hover__color;
+        
+        transition: 1s;
+     }
+}
+
+// mobil //
+
+@media screen and (max-width: $mobil){
+
+// burger menu //
+
+.burger{
+    position: relative;
+    display: flex;
+    
+    right: 15px;
+    
+    z-index: 50;
+    align-items: center;
+    justify-content: end;
+    width: 26px;
+    height: 37px;
+}
+
+.burger span{
+    width: 26px;
+    height: 2px;
+
+    background-color: $burger-span__background-color;
+}
+
+.burger::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 17px;
+    
+    background-color: $burger-span__background-color;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 26px;
+    background-color: $burger-span__background-color;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before{
+    justify-content: end;
+    top: 12px;
+}
+
+.burger::after{
+    bottom: 12px;
+}
+
+.burger.active::before{
+    transform: scale(0)
+}
+
+.burger.active span {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+// Download //
+
+.button__download{
+    position: absolute;
+    width: calc(100% - 10%);
+    height: 45px;
+
+    margin-top: -22.5px;
+    margin-left: 5%;
+
+    background: $button__background;
+    border-radius: 40px;
+    border: 0px;
+
+    @include important-text;
+}
+
+.button__download--a{
+    position: relative;
+    width: 100%;
+    height: 45px;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    @include important-text;
+
+    border-radius: 40px;
+    background: $button__background;
+    border: 2px solid #8D81AC;
+    color: $button;
+
+    &:hover{
+        background: $button-hover__background; 
+        color: $button-hover__color;
+        
+        transition: 1s;
+     }
+
+}
+
+        // buy nov //
+        
+        .nav__button--buynov{
+            position: relative;
+            width: 119px;
+            height: 37px;
+
+            margin-right: 15px;
+        
+            background: $button__background;
+            border-radius: 40px;
+            border: 0px;
+        }
+        
+        .nav__button--buynov-a{
+            width: 119px;
+            height: 37px;
+        
+            font-family: $font-family__montserrat;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 15px;
+
+            margin-right: 20px;            
+        
+            @include important-text;
+        
+            border-radius: 40px;
+            border: 1px solid #8D81AC;
+            background: $button__background;
+            color: $button;
+        
+            &:hover{
+                background: $button-hover__background; 
+                color: $button-hover__color;
+                
+                transition: 1s;
+             }
+         }
+
+}
+
+/*present-text*/
+
+  .present-text__button {
+    position: relative;
+      box-sizing: border-box;
+        width: 118px;
+        height: 26px;
+        margin-bottom: 20px;
+        display: inline-block;
+        cursor: pointer;
+
+          margin-right: -1px;
+          padding: 0 10px;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 20px;
+          color: #24292e;
+          vertical-align: middle;
+          
+          border: 1px solid rgba(27, 31, 35, 0.2);
+          border-radius: 3px;
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+          
+         
+  }
+
+  .present-text__button-text {
+    color: black;
+    display: flex;
+    box-sizing: border-box;
+    width: 80px;
+    height:25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid rgba(27, 31, 35, 0.2);
+    border-bottom: 1px solid rgba(27, 31, 35, 0.2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+        padding: 4px 12px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        background-color: #eff3f6;
+        background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-right-color: 1px solid rgba(31, 35, 40, 0.15);
+        
+
+        &:hover {
+            color: #24292e;
+            background-color: #e6ebf1;
+            background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+            border-color: rgba(27, 31, 35, 0.35);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+          }
+        
+          &:active {
+            background-color: #d9e2ec;
+            background-image: none;
+            border-color: rgba(27, 31, 35, 0.35);
+            box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.2), inset 0 1px 4px rgba(16, 22, 26, 0.4), inset 0 0 1px rgba(255, 255, 255, 0.25);
+          }
+  }
+
+.present-text__button-text-star{
+  width:70px;
+}
+
+.present-text__button-text-title-watch{
+  position: absolute;
+  right: 12px;
+  top: 3px;
+}
+
+.present-text__button-text-title-star{
+  position: absolute;
+  right: 14px;
+  top: 2px;
+}
+
+.present-text__button-counter-star{
+  position: absolute;
+  right: 6px;
+  bottom: 2px;
+  font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+  .present-text__button-text svg{
+    position: absolute;
+      top: 5px;
+      left: 9px;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+      background-repeat: no-repeat;
+  }
+
+  .present-text__button-text-title-fork{
+    position: absolute;
+    right: 16px;
+    top: 3px;
+  }
+
+  .present-text__button-fork{
+    width:75px;
+  }
+
+  .present-text__button-counter-fork{
+    position: absolute;
+      right: 7px;
+      bottom: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 18px;
+  }
+
+  .present-text__button span{
+    display: inline-block;
+  }
+
+
+  .present-text__button-counter{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    right: 5px;
+    bottom: 2px;
+  }
+
+  
+/*pricing section */
+.pricing__service-button {
+    width: 160px;
+    height: 42px;
+    background: #FFFFFF15;
+    border-color: #ffffff00;
+    border-radius: $border-radius-btn;
+    cursor: pointer;
+
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+    
+
+        color: #FFFFFF;
+}
+
+
+.pricing__service-button--position-relative{
+  position: relative;
+  bottom: -21px;
+}
+
+.pricing__service-button--active{
+    width: 190px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 18px;
+}

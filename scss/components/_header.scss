@@ -1,0 +1,337 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+.wrapper-backgraund{
+    width: 100%;
+    height: 615px;
+    background-image: url("../../img/img\ 1.png");
+    background-position: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-top: black;
+}
+
+@media screen and (min-width: $desktop-max){
+
+    header{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .section-nav__fork--h1{
+        position: relative;
+        width: 100%;
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 82px;
+        line-height: 82px;
+
+        padding-top: 68px;
+    
+        @include important-text;
+    
+        color: $title;
+    }
+    
+    .section-header__real--p{
+        position: relative;
+        width: calc(100% - 20px);
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+    
+        margin-left: 10px;
+        margin-top: 19px;
+    
+        @include important-text;
+        
+        color: #8D81AC; 
+    }
+    
+    .section-header__real--pmobil{
+        display: none;
+    }
+
+    .section-header__mac--p{
+        position: relative;
+        width: 100%;
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    
+        margin-top: 14px;
+    
+        @include important-text;
+
+        text-transform: uppercase;
+    
+        color: #848E97;
+    }
+    
+    .header__Unlimited{
+    position: absolute;
+    width: calc(100% - 78%) ;
+    height: 15px;
+    margin-top: 54px;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+
+    margin-left: 39%;
+
+    @include important-text;
+
+    color: #848E97;
+    }
+    }
+
+@media screen and (max-width: $desktop){
+    
+
+    .section-nav__fork--h1{
+        position: relative;
+        width: 100%;
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 82px;
+        line-height: 82px;
+
+        padding-top: 68px;
+    
+        @include important-text;
+    
+        color: $title;
+    }
+    
+    .section-header__real--p{
+        position: relative;
+        width: calc(100% - 20px);
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+    
+        margin-left: 10px;
+        margin-top: 19px;
+    
+        @include important-text;
+        
+        color: #8D81AC; 
+    }
+    
+    .section-header__real--pmobil{
+        display: none;
+    }
+    
+    .section-header__mac--p{
+        position: relative;
+        width: 100%;
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    
+        margin-top: 14px;
+    
+        @include important-text;
+
+        text-transform: uppercase;
+    
+        color: #848E97;
+    }
+    
+    .header__Unlimited{
+    position: absolute;
+    width: calc(100% - 78%) ;
+    height: 15px;
+    margin-top: 54px;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+
+    margin-left: 39%;
+
+    @include important-text;
+
+    color: #848E97;
+    }
+    }
+
+@media screen and (max-width: $tablet){
+    
+
+    .section-nav__fork--h1{
+        position: relative;
+        width: 100%;
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 72px;
+    
+        @include important-text;
+    
+        color: $title;
+    }
+
+    .section-header__real--p{
+        position: relative;
+        width: calc(100% - 20px);
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+    
+        margin-left: 10px;
+        margin-top: 19px;
+    
+        @include important-text;
+        
+        color: #8D81AC;    
+    }
+    
+    .section-header__real--pmobil{
+        display: none;
+    }
+    
+    .section-header__mac--p{
+        position: relative;
+        width: 100%;
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    
+        margin-top: 14px;
+    
+        @include important-text;
+
+        text-transform: uppercase;
+    
+        color: #848E97;
+    }
+
+    .header__Unlimited{
+        position: absolute;
+        width: calc(100% - 70%) ;
+        height: 15px;
+        margin-top: 54px;
+    
+        font-family: $font-family__montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    
+        margin-left: 35%;
+    
+        @include important-text;
+    
+        color: #848E97;
+    }
+
+    }
+
+@media screen and (max-width: $mobil){
+    
+
+.section-nav__fork--h1{
+    position: relative;
+    width: 100%;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+
+    @include important-text;
+
+    color: $title;
+}
+
+.section-header__real--p{
+    position: relative;
+    width: calc(100% - 20px);
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    margin-left: 10px;
+    margin-top: 19px;
+
+    @include important-text;
+    
+    text-transform: capitalize;
+
+    color: #8D81AC;    
+}
+
+.section-header__mac--p{
+    position: relative;
+    width: 100%;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+
+    margin-top: 14px;
+
+    @include important-text;
+
+    text-transform: uppercase;
+
+    color: #848E97;
+}
+
+.header__Unlimited{
+    position: absolute;
+    width: calc(100% - 30%) ;
+    height: 15px;
+    margin-top: 45px;
+
+    font-family: $font-family__montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+
+    margin-left: 15%;
+
+    @include important-text;
+
+    color: #848E97;
+}
+
+}
