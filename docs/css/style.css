@@ -1020,7 +1020,7 @@ svg:hover {
 .wrapper-backgraund {
   width: 100%;
   height: 615px;
-  background-image: url("../../img/img 1.png");
+  background-image: url("../img/img 1.png");
   background-position: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -2216,7 +2216,7 @@ svg:hover {
 .testimonials {
   width: 100%;
   height: auto;
-  background-image: url("../../img/testmonials-bg 1@2x.png");
+  background-image: url("../img/testmonials-bg 1@2x.png");
   background-position: center;
   background-size: cover;
   padding-top: 85px;
